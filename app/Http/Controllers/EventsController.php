@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Date;
 class EventsController extends BaseController
 {
     public function getEventsWithWorkshops() {
-        throw new \Exception('not implemented');
+        throw new \Exception('implement in coding task 1');
     }
 
     public function getFutureEventsWithWorkshops() {
-        throw new \Exception('not implemented');
+        throw new \Exception('implement in coding task 2');
     }
 }
