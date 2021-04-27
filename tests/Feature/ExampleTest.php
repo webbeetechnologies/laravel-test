@@ -7,11 +7,15 @@ use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
+    public function testWarmupEvents() {
+        $response = $this->get('/warmupevents');
+        $response->assertStatus(200)
+            ->assertJsonCount(3)
+            ->assertJsonPath('0.name', 'Laravel convention 2020')
+            ->assertJsonPath('1.name', 'Laravel convention 2021')
+            ->assertJsonPath('2.name', 'React convention 2021');
+    }
+
     public function testEvents() {
         $response = $this->get('/events');
         $response->assertStatus(200)
@@ -43,6 +47,10 @@ class ExampleTest extends TestCase
         $response->assertStatus(200)
             ->assertJsonCount(1)
             ->assertJsonPath('0.children.0.name', 'Laracon')
-            ->assertJsonPath('0.children.1.name', 'Reactcon');
+            ->assertJsonPath('0.children.0.children.0.url', '/events/laracon/workshops/illuminate')
+            ->assertJsonPath('0.children.0.children.1.url', '/events/laracon/workshops/eloquent')
+            ->assertJsonPath('0.children.1.name', 'Reactcon')
+            ->assertJsonPath('0.children.1.children.0.url', '/events/reactcon/workshops/noclass')
+            ->assertJsonPath('0.children.1.children.1.url', '/events/reactcon/workshops/jungle');
     }
 }
