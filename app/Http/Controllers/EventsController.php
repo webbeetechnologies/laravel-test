@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Date;
 
 class EventsController extends BaseController
 {
+    public function getWarmupEvents() {
+        return Event::all();
+    }
+
     /*
      Requirements:
     - maximum 2 sql queries
