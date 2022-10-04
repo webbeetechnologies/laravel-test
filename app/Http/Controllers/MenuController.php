@@ -8,7 +8,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 class MenuController extends BaseController
 {
-    /*
+    /* TODO: complete getMenuItems so that it returns a nested menu structure from the database
     Requirements
     - the eloquent expressions should result in EXACTLY one SQL query no matter the nesting level or the amount of menu items.
     - post process your results in PHP
@@ -18,7 +18,6 @@ class MenuController extends BaseController
 
     Hints:
     - open the `app/Http/Controllers/MenuController` file
-    - php post processing of the query results is needed
     - imagine a maximum of a few hundred menu items
     - partial or not working answers also get graded so make sure you commit what you have
 
