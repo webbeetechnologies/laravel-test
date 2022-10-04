@@ -5,8 +5,9 @@ Get started:
 - create a mysql database for the project
 - change working directory to repo dir
 - run `./setup.sh` (1 test should succeed and 3 should fail)
-
-- open `app/H`
+- open `app/Http/Controllers/EventsController.php for task 1-2`
+- open `app/Http/Controllers/MenuController.php for task 3`
+- open `database/migrations/2022_06_13_075211_create_cinema_schema.php for task 4`
 
 
 Good luck! 🍀🚀
