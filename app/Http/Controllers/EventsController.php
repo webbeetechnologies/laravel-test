@@ -15,9 +15,10 @@ class EventsController extends BaseController
         return Event::all();
     }
 
-    /*
+    /* TODO: complete getEventsWithWorkshops so that it returns all events including the workshops
      Requirements:
     - maximum 2 sql queries
+    - Don't post process query result in PHP
     - verify your solution with `php artisan test`
     - do a `git commit && git push` after you are done or when the time limit is over
 
@@ -105,12 +106,12 @@ class EventsController extends BaseController
     }
 
 
-    /*
+    /* TODO: complete getFutureEventWithWorkshops so that it returns events with workshops, that have not yet started
     Requirements:
     - only events that have not yet started should be included
     - the event starting time is determined by the first workshop of the event
     - the eloquent expressions should result in maximum 3 SQL queries, no matter the amount of events
-    - all filtering of records should happen in the database
+    - Don't post process query result in PHP
     - verify your solution with `php artisan test`
     - do a `git commit && git push` after you are done or when the time limit is over
 
