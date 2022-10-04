@@ -17,7 +17,6 @@ class MenuController extends BaseController
     - do a `git commit && git push` after you are done or when the time limit is over
 
     Hints:
-    - open the `app/Http/Controllers/MenuController` file
     - imagine a maximum of a few hundred menu items
     - partial or not working answers also get graded so make sure you commit what you have
 

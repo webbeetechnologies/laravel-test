@@ -23,7 +23,6 @@ class EventsController extends BaseController
     - do a `git commit && git push` after you are done or when the time limit is over
 
     Hints:
-    - open the `app/Http/Controllers/EventsController` file
     - partial or not working answers also get graded so make sure you commit what you have
 
     Sample response on GET /events:
@@ -116,7 +115,6 @@ class EventsController extends BaseController
     - do a `git commit && git push` after you are done or when the time limit is over
 
     Hints:
-    - open the `app/Http/Controllers/EventsController` file
     - partial or not working answers also get graded so make sure you commit what you have
     - join, whereIn, min, groupBy, havingRaw might be helpful
     - in the sample data set  the event with id 1 is already in the past and should therefore be excluded
